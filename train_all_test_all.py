@@ -10,6 +10,7 @@ emg_window_size = 50
 emg_window_step = 50
 classes = {'open':0, 'close':1, 'flexion':2, 'extension':3, 'rest':4} #dictionary for mapping labels to numbers
 
+#load data
 dataset = np.load(f'example_data.npy', allow_pickle=True) #opens data file, returns dict of np.arrays
 
 #get only EMG data from dataset
